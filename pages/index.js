@@ -28,9 +28,9 @@ export default function Home() {
 
       <main className={styles.main}>
         <h3>Write a Bitcoin Poem</h3>
-        <p align="center">Below is an experimental implementation of OpenAI's API. <br>
+        <p align="center">Below is an experimental implementation of an AI able to write poetry. <br>
         </br>
-        Provide a word which you would like to appear in the poem and the site will generate a poem inlcuding the term you suggest! Have fun. </p>
+        Provide a word which you would like to appear in the poem. The application will generate a text about Bitcoin and relate to the term you provided! Have fun. </p>
         <br></br>
         <form onSubmit={onSubmit}>
           <input

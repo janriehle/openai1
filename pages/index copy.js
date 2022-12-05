@@ -24,27 +24,23 @@ export default function Home() {
     <div>
       <Head>
         <title>OpenAI Quickstart</title>
+        <link rel="icon" href="/dog.png" />
       </Head>
 
       <main className={styles.main}>
-        <h3>Write a Bitcoin Poem</h3>
-        <p align="center">Below is an experimental implementation of OpenAI's API. <br>
-        </br>
-        Provide a word which you would like to appear in the poem and the site will generate a poem inlcuding the term you suggest! Have fun. </p>
-        <br></br>
+        <img src="/dog.png" className={styles.icon} />
+        <h3>Name my pet</h3>
         <form onSubmit={onSubmit}>
           <input
             type="text"
-            name="term"
-            placeholder="Enter your term here"
+            name="animal"
+            placeholder="Enter an animal"
             value={animalInput}
             onChange={(e) => setAnimalInput(e.target.value)}
           />
-          <input type="submit" value="Write poem" />
+          <input type="submit" value="Generate names" />
         </form>
-        <div className={styles.div1}>
-        <p className={styles.result}>{result}</p>
-        </div>
+        <div className={styles.result}>{result}</div>
       </main>
     </div>
   );
